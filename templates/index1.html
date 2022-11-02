@@ -1,0 +1,14 @@
+<html>
+<body>
+    <h3></h3>
+<div>
+  <form action="/predict" method="POST">
+    <label for="filepath">Image Upload</label>
+    <input type="file" id="img" name="img" accept="image/*">
+    <br>
+    <input type="submit" value="Submit">
+    <h1> {{ prediction }}</h1>
+  </form>
+</div>
+</body>
+</html>

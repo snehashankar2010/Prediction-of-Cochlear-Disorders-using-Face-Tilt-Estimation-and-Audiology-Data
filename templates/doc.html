@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en"><!-- Basic -->
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ 
+     <!-- Site Metas -->
+    <title>Health Lab - Responsive HTML5 Template</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='images/apple-touch-icon.png') }}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <!-- Pogo Slider CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/pogo-slider.min.css') }}">
+	<!-- Site CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">    
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .center {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 50%;
+                }
+        h1 {
+                margin: 1em 0 0.5em 0;
+                font-weight: 100;
+                text-transform: uppercase;
+                color: #002248;
+                font-family: 'Josefin Sans', sans-serif;
+                font-size: 48px;
+                line-height: 54px;
+                text-shadow: 2px 5px 0 rgba(0,0,0,0.2);
+            }
+        h2 {
+                margin: 1em 2em 0.5em 1em;
+                color: #1d2642;
+                font-size: 26px;
+                line-height: 40px;
+                font-weight: bold;
+                font-family: 'Josefin Sans', sans-serif;
+            }
+    </style>
+</head>
+
+<body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+    <header class="top-header">
+        <nav class="navbar header-nav navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="/index"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="image"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                    <ul class="navbar-nav">
+                        <li><a class="nav-link active" href="#home">Home</a></li>
+                        <li><a class="nav-link" href="#about">About Us</a></li>
+                        <li><a class="nav-link" href="#appointment">Patient</a></li>
+                        <li><a class="nav-link" href="#gallery">Gallery</a></li>
+                        <li><a class="nav-link" href="#blog">Blog</a></li>
+                        <li><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <img src="{{ url_for('static', filename='images/slider-02.jpg') }}" height = "500" width="700" class="center">
+    <h1>Folowing are collected from patients:</h1>
+    <h2>
+        <ul>Shape of training samples: (160, 62)</ul>
+        <ul>Shape of testing samples: (40, 62)</ul>
+        <ul>No. of testing samples: 600</ul>
+        Upon evaluation:
+        <ul>Highest Accuracy Calculated: 82.5%</ul>
+        After predicting all test samples according to curated model:</p>
+    <p>Confusion matrix so formed:</p>
+    <img src="{{ url_for('static', filename='images/cm.png') }}" class="center">
+    <ul>R2 Score: 0.8632</ul>
+    <ul>MAE Score: 0.4513</ul>
+    <ul>EVS Score: 0.61</ul></h2>
+    <img src="{{ url_for('static', filename='images/classificationReport.png') }}" class="center">
+    <!--conclusion file-->
